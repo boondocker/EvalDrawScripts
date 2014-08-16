@@ -1,0 +1,11 @@
+while(1){
+
+   for(i = 0; i < 30; i = I + 0.01){
+      cls(0);
+      setcol(i * 10, 0, 0);
+      drawsph(i * i, i * i, i);
+      refresh();
+   }
+
+
+}
