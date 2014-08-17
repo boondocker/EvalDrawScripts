@@ -1,0 +1,13 @@
+xPos = xres / 2, yPos = yres / 2;
+xVel = 0, yVel = 0;
+gravity = -0.01;
+while(1){
+   cls(0);
+   drawsph(xPos,yPos,8);
+   
+   if(yPos > yres) yVel = -3;
+    
+   yPos = yPos + yVel;
+   yVel = yVel - gravity;
+   refresh(0);
+}
